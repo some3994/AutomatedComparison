@@ -19,11 +19,11 @@ from FunctionsforComparison import *
 #Import file. 
 #Instruction: please fill in the line below
 file1 = pd.read_csv("HF059A08.csv",comment = '#')  
-#Note: panda read csv is stupid and can't seem to work with comment lines 
+#Note: panda read csv is #### and can't seem to work with comment lines 
 #on a consistent basis. It worked perfectly fine on health child and patient 
 #data but not healthy female despite the format being exactly the same. So if 
 #it doesn't read Vicon Output file directly, then comment out the lines 
-#indicating the various events
+#indicating the various events at the start of the document
 
 file1 = file1.fillna('0') #fill in the gaps within the data input file
 
