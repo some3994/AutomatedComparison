@@ -16,7 +16,7 @@ def PelvisTilt(k,method1a,method2a):
     i = findbodypart('LPelvis',method2a,k)
     pelvis1,pelvis2 = datatake(method1a,method2a,k,i,0)
     #0 to extract data at normal index 1, 1 to extract data at normal index
-    #2 and etc.. Don't @me lol @python
+    #2 and etc.. 
     #As the angles are defined as oppisites, use diffcalcadjustment1
     PelvTiltDif = differencecalc(pelvis1,pelvis2)
     Test_Dif = PelvTiltDif[k+10]
