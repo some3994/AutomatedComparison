@@ -27,7 +27,8 @@ def PelvisTilt(k,method1a,method2a):
         PelvTiltDif = diffcalcadjustment1(pelvis1,pelvis2)
     elif Test_Dif>90 and Test_Dif<180:
         PelvTiltDif = diffcalcadjustment2(pelvis1,pelvis2,k)
-
+    #The tests are applied because Pelvis angles are defined differently from case to case, the test gives a general idea of how to
+    #adjust and get comparable results.
     plotgraph(pelvis1,'Pelvic Tilt Angle 1',pelvis2,'Pelvic Tilt Angle 2',PelvTiltDif,'Pelvic Tilt Angle Dif','Frame','Degrees')        
         
 def PelvisOb(k,method1a,method2a):
